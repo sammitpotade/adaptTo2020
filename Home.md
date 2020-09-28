@@ -64,17 +64,15 @@ We will start by reviewing the project structure and DAM Update Asset workflow c
 ### Exercise 0 - Setup Local AEM Environment
 
 1. Download the latest cloudready AEM environment from here: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-sdk-2020.9.4245.20200921T202853Z-200827.zip
-   
-   OR
-
-   Download executable JAR from github (Only available for this workshop): TBD
 
 2. Setup local AEM environment by adding your developer license.txt file and then running following command
    *java -jar aem-cloudready-p4502*
-3. Install Required Project Package using AEM Package Manager: http://localhost:4502/crx/packmgr/index.jsp
 
+3. Download Required Project Package found here: https://github.com/sammitpotade/adaptTo2020/tree/master/packages
 
-4. This should complete local setup, You have local AEM running and project has been deployed.
+4. Install downloaded packages using AEM package manager locally: http://localhost:4502/crx/packmgr/index.jsp
+
+5. This should complete local setup, You have local AEM running and project has been deployed.
    
 ### Exercise 1.1 - Review existing project structure
 
