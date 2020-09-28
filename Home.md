@@ -68,10 +68,12 @@ We will start by reviewing the project structure and DAM Update Asset workflow c
    OR
 
    Download executable JAR from github (Only available for this workshop): TBD
-   
+
 2. Setup local AEM environment by adding your developer license.txt file and then running following command
    *java -jar aem-cloudready-p4502*
-3. Install Associated Project Package using AEM Package Manager: http://localhost:4502/crx/packmgr/index.jsp
+3. Install Required Project Package using AEM Package Manager: http://localhost:4502/crx/packmgr/index.jsp
+
+
 4. This should complete local setup, You have local AEM running and project has been deployed.
    
 ### Exercise 1.1 - Review existing project structure
@@ -160,13 +162,19 @@ The goal of this lesson is to leverage the AEM workflow migration tool to migrat
    
 5. To execute the migration tool against the AEM 6.5 project, run the following command: `java -jar wf-migrator-0.1.0.jar <maven-project-path>`. 
    
-   *Reference project from Git Repo: https://github.com/sammitpotade/adaptTo2020/tree/master/code We have focused only on relevant modules*
+   *Reference project from Git Repo: https://github.com/sammitpotade/adaptTo2020/tree/master/code*
+   
+   Note - We have focused only on relevant modules
 
 6. Once the migration is complete, the following message should be displayed on your Terminal:
 
    *Migration complete.  A report file has been created at /Users/spotade/Desktop/migration-report.md.*
 
+Reference copy of migration report can be found here: https://github.com/sammitpotade/adaptTo2020/blob/master/solution/migration-report.md
+
 You should now see a file named *migration-report.md*.  If you see a different message or do not see this file, Raise your hand virtually or ping us in chat.
+
+
 
 ### Exercise 2.2 - Review the migration report
 
