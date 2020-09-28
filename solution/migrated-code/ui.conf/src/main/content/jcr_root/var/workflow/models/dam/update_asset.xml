@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" description="This workflow manages the update of assets" jcr:isCheckedOut="{Boolean}false" jcr:primaryType="cq:WorkflowModel" jcr:uuid="01001f76-9ea5-45ed-934f-dca169e9c9b6" sling:resourceType="cq/workflow/components/model" title="DAM Update Asset">
+    <metaData cq:generatingPage="/conf/global/settings/workflow/models/dam/update_asset/jcr:content" cq:lastModified="{Long}1581481765432" cq:lastModifiedBy="admin" jcr:primaryType="nt:unstructured" tags="dam,wcm" transient="true"/>
+    <nodes jcr:primaryType="nt:unstructured">
+        <node0 jcr:primaryType="cq:WorkflowNode" title="Start" type="START">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node0>
+        <node1 description="This process will send DamEvent.Type.DAM_UPDATE_ASSET_WORKFLOW_COMPLETED event when DAM update asset workflow is completed" jcr:primaryType="cq:WorkflowNode" title="DAM Update Asset Workflow Completed" type="PROCESS">
+            <metaData PROCESS="com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess" PROCESS_AUTO_ADVANCE="true" jcr:primaryType="nt:unstructured"/>
+        </node1>
+        <node2 description="Custom Process Step to add metadata" jcr:primaryType="cq:WorkflowNode" title="Simple Metadata Process Step" type="PROCESS">
+            <metaData PROCESS="com.adobe.core.workflow.AddSimpleMetadata" jcr:primaryType="nt:unstructured"/>
+        </node2>
+        <node3 jcr:primaryType="cq:WorkflowNode" title="End" type="END">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node3>
+    </nodes>
+    <transitions jcr:primaryType="nt:unstructured">
+        <node0_x0023_node1 from="node0" jcr:primaryType="cq:WorkflowTransition" rule="" to="node1">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node0_x0023_node1>
+        <node1_x0023_node2 from="node1" jcr:primaryType="cq:WorkflowTransition" rule="" to="node2">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node1_x0023_node2>
+        <node2_x0023_node3 from="node2" jcr:primaryType="cq:WorkflowTransition" rule="" to="node3">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node2_x0023_node3>
+    </transitions>
+</jcr:root>

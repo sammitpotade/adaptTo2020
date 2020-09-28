@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+    <jcr:content cq:lastModified="{Date}2020-02-11T23:29:22.871-05:00" cq:lastModifiedBy="admin" cq:tags="[workflow:dam,workflow:wcm]" cq:template="/libs/cq/workflow/templates/model" cq:workflowDetailsPage="/mnt/overlay/dam/gui/content/s7dam/jobmonitoring/encodingjobdetails.html${item}?item=${payload}" jcr:description="This workflow manages the update of assets" jcr:primaryType="cq:PageContent" jcr:title="DAM Update Asset" sling:resourceType="cq/workflow/components/pages/model" transient="true">
+        <flow jcr:primaryType="nt:unstructured" sling:resourceType="foundation/components/parsys">
+            <damupdateassetworkflowcompletedprocess jcr:description="This process will send DamEvent.Type.DAM_UPDATE_ASSET_WORKFLOW_COMPLETED event when DAM update asset workflow is completed" jcr:primaryType="nt:unstructured" jcr:title="DAM Update Asset Workflow Completed" sling:resourceType="dam/components/workflow/damupdateassetworkflowcompletedprocess">
+                <metaData PROCESS="com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess" PROCESS_AUTO_ADVANCE="true" jcr:primaryType="nt:unstructured"/>
+            </damupdateassetworkflowcompletedprocess>
+            <process_1492464427 jcr:description="Custom Process Step to add metadata" jcr:primaryType="nt:unstructured" jcr:title="Simple Metadata Process Step" sling:resourceType="cq/workflow/components/model/process">
+                <metaData PROCESS="com.adobe.core.workflow.AddSimpleMetadata" jcr:primaryType="nt:unstructured"/>
+            </process_1492464427>
+        </flow>
+    </jcr:content>
+</jcr:root>
