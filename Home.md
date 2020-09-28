@@ -271,9 +271,10 @@ While the workflow migration tool will automatically generate processing profile
    
    ![Create Folder](assets/L3/Create_Folder.png)
 
-3. Give your new folder under /content/dam/skillbuilder with title of 'AdaptTo-<yourName>' & click *Create*.
+3. Give your new folder under /content/dam/skillbuilder with title of 'adapto-firstName' & click *Create*.
+   e.g. 'adaptto-spotade'
    
-   ![L736 Folder](assets/L3/L736.png)
+   ![L736 Folder](assets/L3/folderName.png)
 
 4. Click on the AEM icon in top left corner of your screen & click on the Tools icon.
    
@@ -298,13 +299,13 @@ While the workflow migration tool will automatically generate processing profile
    - Excluded Mime Type - This rendition will be skipped for the given mime types.
 10. Don't make any changes to these configurations as part of this exercise.  Click *Cancel* to dismiss the dialog.
 11. Select the processing profile again and click on *Apply to Folder*.
-12. Select the 'L736' folder that we created earlier and click *Apply*.
+12. Select the '/skillbuilder/adaptto-spotade' folder that we created earlier and click *Apply*.
     
    ![Apply To Folder](assets/L3/ApplyToFolder.png)
 
 ### Exercise 4.4 - Upload assets
 
-1. In AEM as a Cloud Service, click *Assets > Files > L736*.
+1. In AEM as a Cloud Service, click *Assets > Files > skillbuilder > adaptto-spotade*.
 2. On your desktop, open the folder named *Sample Assets*.
 3. Drag and drop some assets from this folder into AEM.  Make sure to include at least one PNG file and one PDF file.
 4. Wait a few moments and then try refreshing the page.  When asset processing has completed, the assets will change state from *Processing* to *New*.
@@ -316,7 +317,7 @@ While the workflow migration tool will automatically generate processing profile
    
    ![Rendition Action](assets/L3/Rendition_Action.png)
 
-7. Note that our 300x300 rendition has been generated for us by the Asset Microservices.  In AEM as a Cloud Service, the actual dimensions of the image are displayed, rather than the configured dimensions.  Thus, the image in our example is shown as 300x181 instead of 300x300.
+7. Note that our 480*480 rendition has been generated for us by the Asset Microservices.  In AEM as a Cloud Service, the actual dimensions of the image are displayed, rather than the configured dimensions.  Thus, the image in our example is shown as 480*121 instead of 480*480.
    
    ![Renditions](assets/L3/Renditions.png)
 
