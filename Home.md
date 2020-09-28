@@ -23,7 +23,7 @@
     - [Exercise 2.2 - Review the migration report](#exercise-22---review-the-migration-report)
     - [Bonus Exercise - Review code changes](#bonus-exercise---review-code-changes)
 - [Lesson 3 - Cloud Manager Deployment Demo](#lesson-3---cloud-manager-deployment-demo)
-  - [Bonus Exercise](#bonus-exercise)
+  - [Bonus Exercise - Deployment Activity](#bonus-exercise---deployment-activity)
 - [Lesson 4 - Test Changes on AEM as Cloud Service](#lesson-4---test-changes-on-aem-as-cloud-service)
   - [Objective](#objective-2)
   - [Lesson Context](#lesson-context-2)
@@ -31,7 +31,7 @@
     - [Exercise 4.2 - Review the updated DAM Update Asset workflow](#exercise-42---review-the-updated-dam-update-asset-workflow)
     - [Exercise 4.3 - Review the generated processing profile and attach it to a folder](#exercise-43---review-the-generated-processing-profile-and-attach-it-to-a-folder)
     - [Exercise 4.4 - Upload assets](#exercise-44---upload-assets)
-    - [Bonus Exercise](#bonus-exercise-1)
+    - [Bonus Exercise](#bonus-exercise)
   - [Next Steps](#next-steps)
 - [Additional Resources](#additional-resources)
 
@@ -64,8 +64,11 @@ We will start by reviewing the project structure and DAM Update Asset workflow c
 ### Exercise 0 - Setup Local AEM Environment
 
 1. Download the latest cloudready AEM environment from here: https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-sdk-2020.9.4245.20200921T202853Z-200827.zip
+   
    OR
-   Download executable JAR from github (Only available for this workshop)
+
+   Download executable JAR from github (Only available for this workshop): TBD
+   
 2. Setup local AEM environment by adding your developer license.txt file and then running following command
    *java -jar aem-cloudready-p4502*
 3. Install Associated Project Package using AEM Package Manager: http://localhost:4502/crx/packmgr/index.jsp
@@ -203,7 +206,8 @@ If you finish the previous exercises early, feel free to browse around in the so
 
 The next step in the migration is to deploy the changes that have been made to our development environment, via Cloud Manager, so that we can validate these changes.  As the actual build process will take a little while to execute, we will be demoing this section.  In the interest of time,the actual changes have already been deployed to your AEM as a Cloud Service environments.
 
-## Bonus Exercise
+## Bonus Exercise - Deployment Activity
+
 You can review previous build activity here: https://experience.adobe.com/#/@adapttoassets/cloud-manager/pipelineexecution.html/program/18053/pipeline/849782/execution/183178
 
 *Credentials mentioned in exercise 4.1*
