@@ -212,6 +212,8 @@ If you finish the previous exercises early, feel free to browse around in the so
 
 The next step in the migration is to deploy the changes that have been made to our development environment, via Cloud Manager, so that we can validate these changes.  As the actual build process will take a little while to execute, we will be demoing this section.  In the interest of time,the actual changes have already been deployed to your AEM as a Cloud Service environments.
 
+Cloud Manager URL: https://experience.adobe.com/#/@adapttoassets/cloud-manager/home.html/program/18053
+
 ## Bonus Exercise - Deployment Activity
 
 You can review previous build activity here: https://experience.adobe.com/#/@adapttoassets/cloud-manager/pipelineexecution.html/program/18053/pipeline/849782/execution/183178
@@ -252,7 +254,7 @@ The updated code/content packages have already been installed on your AEM as Clo
    
    ![AEM SignIN](assets/L3/AEM-SignIn.png)
 
-6. You should now be logged in to AEM and should see the AEM landing page.  If this is not the case, please raise your hand and ask for assistance.
+6. You should now be logged in to AEM and should see the AEM landing page.  If this is not the case, please ask for assistance.
 7. We will revisit this landing page several times in the following exercises.  You may want to create a bookmark in case you later get lost and need to return here.
 
 ### Exercise 4.2 - Review the updated DAM Update Asset workflow
