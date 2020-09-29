@@ -164,7 +164,7 @@ The goal of this lesson is to leverage the AEM workflow migration tool to migrat
    
    Note - We have focused only on relevant modules
 
-6. Once the migration is complete, the following message should be displayed on your Terminal:
+6. Once the migration tool run is complete, the following message should be displayed on your Terminal:
 
    *Migration complete.  A report file has been created at /Users/spotade/Desktop/migration-report.md.*
 
